@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4fff4;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#2e7d32,#66bb6a);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+nav{
+    background:#1b5e20;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#c8e6c9;
+}
+
+.hero{
+    min-height:60vh;
+    background:url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=1200')
+    center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero div{
+    background:rgba(0,0,0,0.6);
+    padding:30px;
+    border-radius:15px;
+    max-width:700px;
+}
+
+.hero h2{
+    font-size:2.5rem;
+    margin-bottom:15px;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    background:#4caf50;
+    color:white;
+    font-size:1rem;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#2e7d32;
+}
+
+section{
+    padding:50px 10%;
+}
+
+section h2{
+    margin-bottom:20px;
+    color:#2e7d32;
+}
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.card{
+    flex:1;
+    min-width:250px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.contador{
+    text-align:center;
+    margin-top:30px;
+}
+
+#numero{
+    font-size:4rem;
+    color:#2e7d32;
+    font-weight:bold;
+}
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:2rem;
+    }
+
+    .hero h2{
+        font-size:1.8rem;
+    }
+
+    .cards{
+        flex-direction:column;
+    }
+}
