@@ -86,25 +86,7 @@ footer {
     padding: 15px;
 }
 
-/* Modo escuro */
 
-.escuro {
-    background: #222;
-    color: white;
-}
-
-.escuro section {
-    background: #333;
-}
-
-.escuro h2 {
-    color: #8bc34a;
-}
-
-.escuro header,
-.escuro footer {
-    background: #111;
-}
 
 /* Responsivo */
 

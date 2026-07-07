@@ -1,8 +1,3 @@
-// Modo escuro
-
-document.getElementById("tema").onclick = function () {
-    document.body.classList.toggle("escuro");
-};
 
 // Tamanho da fonte
 
