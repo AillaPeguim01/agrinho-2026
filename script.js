@@ -43,15 +43,15 @@ let texto = document.getElementById("texto");
 
 let lista = [
 
-    "Tecnologia da NASA: A iluminação e irrigação indoor foram aprimoradas para alimentar astronautas no espaço.",
+    "👩🏻‍💻Tecnologia da NASA: A iluminação e irrigação indoor foram aprimoradas para alimentar astronautas no espaço.",
 
-    "95% menos água: Sistemas fechados reciclam a água, gastando muito menos que a agricultura comum.",
+    "💧95% menos água: Sistemas fechados reciclam a água, gastando muito menos que a agricultura comum.",
 
-    "Luz sob medida: LEDs azuis aceleram o crescimento das folhas e os vermelhos estimulam as flores.",
+    "☀️Luz sob medida: LEDs azuis aceleram o crescimento das folhas e os vermelhos estimulam as flores.",
 
-    "Super velocidade: Com clima e luz controlados, as plantas crescem até duas vezes mais rápido.",
+    "⚡Super velocidade: Com clima e luz controlados, as plantas crescem até duas vezes mais rápido.",
 
-    "Sem estações: É possível colher qualquer vegetal o ano todo, ignorando o inverno ou o verão."
+    "🌦️Sem estações: É possível colher qualquer vegetal o ano todo, ignorando o inverno ou o verão."
 
 ];
 
