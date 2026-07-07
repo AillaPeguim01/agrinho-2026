@@ -1,139 +1,444 @@
+/* ===========================
+   AGRINHO 2026 - STYLE.CSS
+   =========================== */
+
+/* Reset básico */
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+/* Corpo */
 
 body{
-    background:#bff3bf;
-    color:#333;
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4fff4;
+    color: #333;
+    transition: .4s;
+
 }
 
+/* Cabeçalho */
+
 header{
-    background:linear-gradient(135deg,#2e7d32,#66bb6a);
-    color:white;
-    text-align:center;
-    padding:40px 20px;
+
+    background: linear-gradient(#2E7D32,#43A047);
+    color: white;
+    text-align: center;
+    padding: 30px;
+
 }
 
 header h1{
-    font-size:3rem;
+
+    font-size: 40px;
+    margin-bottom: 10px;
+
 }
 
+header p{
+
+    margin-bottom:20px;
+
+}
+
+/* Menu */
+
 nav{
-    background:#1b5e20;
-    text-align:center;
-    padding:15px;
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+
 }
 
 nav a{
+
     color:white;
     text-decoration:none;
-    margin:15px;
     font-weight:bold;
+    padding:10px 18px;
+    border-radius:10px;
+    transition:.3s;
+
 }
 
 nav a:hover{
-    color:#c8e6c9;
+
+    background:white;
+    color:#2E7D32;
+
 }
 
-.hero{
-    min-height:60vh;
-    background:url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=1200')
-    center/cover;
+/* Botão modo escuro */
+
+#modoEscuro{
+
+    position:fixed;
+    top:20px;
+    right:20px;
+
+    background:#222;
+    color:white;
+
+    border:none;
+    padding:12px 20px;
+
+    border-radius:10px;
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#modoEscuro:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* Banner */
+
+.banner{
+
+    background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("img/cultivo.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    height:450px;
+
     display:flex;
     justify-content:center;
     align-items:center;
+
     text-align:center;
+
     color:white;
+
 }
 
-.hero div{
-    background:rgba(0,0,0,0.6);
-    padding:30px;
-    border-radius:15px;
-    max-width:700px;
+.textoBanner{
+
+    width:80%;
+
 }
 
-.hero h2{
-    font-size:2.5rem;
-    margin-bottom:15px;
+.textoBanner h2{
+
+    font-size:48px;
+    margin-bottom:20px;
+
 }
 
-button{
-    margin-top:20px;
-    padding:12px 25px;
-    border:none;
-    border-radius:8px;
-    background:#4caf50;
-    color:white;
-    font-size:1rem;
-    cursor:pointer;
+.textoBanner p{
+
+    font-size:22px;
+    line-height:1.6;
+
 }
 
-button:hover{
-    background:#2e7d32;
-}
+/* Seções */
 
 section{
-    padding:50px 10%;
+
+    padding:60px 10%;
+    text-align:center;
+
 }
 
 section h2{
-    margin-bottom:20px;
-    color:#2e7d32;
+
+    color:#2E7D32;
+    margin-bottom:25px;
+    font-size:34px;
+
 }
 
+section p{
+
+    line-height:1.8;
+    margin-bottom:18px;
+
+}
+
+/* Cards */
+
 .cards{
+
     display:flex;
+    justify-content:center;
+    gap:30px;
+
     flex-wrap:wrap;
-    gap:20px;
+
+    margin-top:40px;
+
 }
 
 .card{
-    flex:1;
-    min-width:250px;
+
     background:white;
+
+    width:260px;
+
     padding:25px;
+
     border-radius:15px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
-    transition:0.3s;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.15);
+
+    transition:.3s;
+
 }
 
 .card:hover{
-    transform:translateY(-5px);
+
+    transform:translateY(-10px);
+
 }
 
-.contador{
-    text-align:center;
-    margin-top:30px;
+.card h3{
+
+    color:#2E7D32;
+    margin-bottom:15px;
+
 }
 
-#numero{
-    font-size:4rem;
-    color:#2e7d32;
+/* Botões */
+
+button{
+
+    background:#2E7D32;
+    color:white;
+
+    border:none;
+
+    padding:14px 28px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    margin-top:15px;
+
+}
+
+button:hover{
+
+    background:#1B5E20;
+    transform:scale(1.05);
+
+}
+
+/* Formulário */
+
+form{
+
+    width:420px;
+    max-width:95%;
+    margin:auto;
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+label{
+
+    text-align:left;
+    margin-top:18px;
+    margin-bottom:8px;
+
     font-weight:bold;
+
 }
+
+input,
+select{
+
+    padding:12px;
+
+    border:1px solid #bbb;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+}
+
+input:focus,
+select:focus{
+
+    outline:none;
+
+    border:2px solid #43A047;
+
+}
+
+/* Resultado */
+
+#resultado{
+
+    margin-top:25px;
+
+    color:#2E7D32;
+
+}
+
+/* Mensagem */
+
+#mensagem{
+
+    margin-top:20px;
+
+    color:#1B5E20;
+
+    font-size:22px;
+
+}
+
+/* Rodapé */
 
 footer{
-    background:#1b5e20;
+
+    background:#2E7D32;
     color:white;
+
     text-align:center;
-    padding:20px;
+
+    padding:30px;
+
+    margin-top:40px;
+
+}
+
+/* ===========================
+   MODO ESCURO
+   =========================== */
+
+.dark{
+
+    background:#1b1b1b;
+    color:white;
+
+}
+
+.dark section{
+
+    background:#1b1b1b;
+
+}
+
+.dark .card{
+
+    background:#333;
+    color:white;
+
+}
+
+.dark h2{
+
+    color:#8BC34A;
+
+}
+
+.dark input,
+.dark select{
+
+    background:#444;
+    color:white;
+    border:1px solid #777;
+
+}
+
+/* ===========================
+   RESPONSIVO
+   =========================== */
+
+@media(max-width:900px){
+
+    .textoBanner h2{
+
+        font-size:38px;
+
+    }
+
+    .textoBanner p{
+
+        font-size:20px;
+
+    }
+
 }
 
 @media(max-width:768px){
 
-    header h1{
-        font-size:2rem;
-    }
+    nav{
 
-    .hero h2{
-        font-size:1.8rem;
-    }
-
-    .cards{
         flex-direction:column;
+
     }
+
+    .banner{
+
+        height:350px;
+
+    }
+
+    .textoBanner h2{
+
+        font-size:30px;
+
+    }
+
+    .textoBanner p{
+
+        font-size:18px;
+
+    }
+
+    section{
+
+        padding:40px 20px;
+
+    }
+
+}
+
+@media(max-width:500px){
+
+    header h1{
+
+        font-size:30px;
+
+    }
+
+    section h2{
+
+        font-size:26px;
+
+    }
+
+    .card{
+
+        width:100%;
+
+    }
+
+    #modoEscuro{
+
+        position:static;
+        margin:20px auto;
+        display:block;
+
+    }
+
 }
