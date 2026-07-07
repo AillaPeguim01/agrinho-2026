@@ -39,6 +39,6 @@ document.getElementById("form").onsubmit = function (event) {
     const nome = document.getElementById("nome").value;
 
     document.getElementById("resultado").innerHTML =
-        `Olá, ${nome}! Obrigado por visitar o site.`;
+        `Olá, ${nome}! Seja bem-vindo(a)`;
 
 };
