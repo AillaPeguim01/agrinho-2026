@@ -31,16 +31,18 @@ botaoModo.addEventListener("click", function () {
 // Lista de curiosidades
 const curiosidades = [
 
-    "💧 O cultivo indoor pode economizar até 90% de água em comparação ao cultivo tradicional.",
+    Aqui estão 10 curiosidades sobre o cultivo indoor, com frases mais detalhadas para você entender melhor os benefícios e o funcionamento desse sistema:
 
-    "🌱 Muitas hortaliças crescem mais rápido em ambientes controlados.",
-
-    "💡 As lâmpadas LED ajudam no crescimento das plantas gastando pouca energia.",
-
-    "🥬 O cultivo indoor permite produzir alimentos durante todo o ano.",
-
-    "🌎 Produzir perto das cidades reduz a emissão de gases causada pelo transporte."
-
+Economia extrema de água: O cultivo indoor que utiliza sistemas hidropônicos ou aeropônicos pode economizar até 90% de água em comparação à agricultura tradicional, pois a água é constantemente reaproveitada e reciclada dentro do sistema em vez de evaporar ou sumir na terra.,
+Crescimento acelerado: Muitas hortaliças, como alfaces e temperos, crescem até 50% mais rápido em ambientes controlados porque recebem a quantidade exata de luz, água e nutrientes de que precisam, sem sofrer com o estresse do clima.,
+Eficiência energética com LEDs: As lâmpadas de LED modernas ajudam no crescimento saudável das plantas gastando pouca energia elétrica, já que emitem apenas as cores específicas de luz que os vegetais realmente usam para fazer fotossíntese.,
+Produção sem pausas no ano: O cultivo indoor permite produzir alimentos frescos durante todo o ano, permitindo colher morangos no inverno ou folhas verdes no verão extremo, sem depender das estações do ano.,
+Sustentabilidade urbana: Produzir alimentos em fazendas verticais perto ou dentro das grandes cidades reduz drasticamente a emissão de gases poluentes na atmosfera, já que diminui a necessidade de caminhões transportarem a comida por longas distâncias.,
+Alimentos livres de agrotóxicos: Como as plantas ficam isoladas em ambientes fechados e protegidos, o risco de surgimento de pragas e insetos é muito menor, eliminando quase totalmente a necessidade de usar pesticidas ou defensivos químicos.,
+Aproveitamento máximo de espaço: Através do cultivo vertical (onde as plantas são empilhadas em prateleiras), é possível produzir até 10 vezes mais alimentos por metro quadrado do que em uma plantação convencional no campo.,
+Controle total do sabor e nutrientes: Cientistas e produtores conseguem ajustar a "receita de luz" e a quantidade de minerais na água para fazer com que as plantas fiquem mais saborosas, crocantes ou até mesmo mais nutritivas.,
+Menos desperdício de comida:Como o ambiente é monitorado por computadores e sensores, as plantas crescem com um padrão de qualidade muito alto, o que diminui o desperdício de alimentos que normalmente seriam descartados por imperfeições.,
+Independência de solo fértil: Esse método permite cultivar vegetais em locais onde a agricultura tradicional seria impossível, como no meio de desertos, em regiões congeladas ou até mesmo dentro de galpões abandonados em centros urbanos.,
 ];
 
 // Variável que guarda a posição atual
@@ -98,36 +100,6 @@ botaoCalcular.addEventListener("click", function () {
 
 });
 
-// ---------- FORMULÁRIO ----------
-
-const botaoEnviar = document.getElementById("enviar");
-
-botaoEnviar.addEventListener("click", function () {
-
-    let nome = document.getElementById("nome").value;
-
-    let resposta = document.getElementById("resposta").value;
-
-    let mensagem = document.getElementById("mensagem");
-
-    if (nome === "") {
-
-        mensagem.textContent = "Digite seu nome.";
-
-        return;
-
-    }
-
-    mensagem.innerHTML =
-        "<strong>Olá, " +
-        nome +
-        "!</strong><br><br>" +
-        "Obrigado por visitar nosso projeto do Agrinho 2026.<br>" +
-        "Sua resposta foi: <strong>" +
-        resposta +
-        "</strong>.";
-
-});
 
 // ---------- ROLAGEM SUAVE ----------
 
