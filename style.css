@@ -1,43 +1,57 @@
-/* ===========================
-   AGRINHO 2026 - STYLE.CSS
-   =========================== */
-
-/* Reset básico */
+/* Configuração geral */
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-/* Corpo */
 
 body{
 
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4fff4;
-    color: #333;
-    transition: .4s;
+
+    background:#f2fff2;
+
+    color:#333;
 
 }
+
 
 /* Cabeçalho */
 
 header{
 
-    background: linear-gradient(#2E7D32,#43A047);
-    color: white;
-    text-align: center;
-    padding: 30px;
+    background:#2e7d32;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
 
 }
+
+
+header img{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+}
+
 
 header h1{
 
-    font-size: 40px;
-    margin-bottom: 10px;
+    font-size:40px;
+
+    margin:10px;
 
 }
+
 
 header p{
 
@@ -45,375 +59,206 @@ header p{
 
 }
 
+
+
 /* Menu */
 
 nav{
 
     display:flex;
+
     justify-content:center;
+
     gap:20px;
+
     flex-wrap:wrap;
 
 }
 
+
 nav a{
 
     color:white;
+
     text-decoration:none;
-    font-weight:bold;
-    padding:10px 18px;
+
+    padding:8px 15px;
+
     border-radius:10px;
-    transition:.3s;
+
+    transition:0.3s;
 
 }
+
 
 nav a:hover{
 
     background:white;
-    color:#2E7D32;
+
+    color:#2e7d32;
 
 }
 
-/* Botão modo escuro */
 
-#modoEscuro{
-
-    position:fixed;
-    top:20px;
-    right:20px;
-
-    background:#222;
-    color:white;
-
-    border:none;
-    padding:12px 20px;
-
-    border-radius:10px;
-    cursor:pointer;
-
-    transition:.3s;
-
-}
-
-#modoEscuro:hover{
-
-    transform:scale(1.05);
-
-}
-
-/* Banner */
-
-.banner{
-
-    background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-    url("img/cultivo.jpg");
-
-    background-size:cover;
-    background-position:center;
-
-    height:450px;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    text-align:center;
-
-    color:white;
-
-}
-
-.textoBanner{
-
-    width:80%;
-
-}
-
-.textoBanner h2{
-
-    font-size:48px;
-    margin-bottom:20px;
-
-}
-
-.textoBanner p{
-
-    font-size:22px;
-    line-height:1.6;
-
-}
 
 /* Seções */
 
 section{
 
-    padding:60px 10%;
+    padding:40px 10%;
+
     text-align:center;
 
 }
 
+
 section h2{
 
-    color:#2E7D32;
-    margin-bottom:25px;
-    font-size:34px;
+    color:#2e7d32;
+
+    margin-bottom:20px;
+
+    font-size:30px;
 
 }
+
 
 section p{
 
-    line-height:1.8;
-    margin-bottom:18px;
+    line-height:1.7;
 
 }
 
-/* Cards */
+
+
+/* Cards de benefícios */
 
 .cards{
 
     display:flex;
+
     justify-content:center;
-    gap:30px;
+
+    gap:20px;
 
     flex-wrap:wrap;
 
-    margin-top:40px;
+    margin-top:30px;
 
 }
+
 
 .card{
 
     background:white;
 
-    width:260px;
+    width:250px;
 
-    padding:25px;
+    padding:20px;
 
     border-radius:15px;
 
-    box-shadow:0 8px 18px rgba(0,0,0,.15);
+    box-shadow:0 5px 15px #0002;
 
-    transition:.3s;
+    transition:0.3s;
 
 }
+
 
 .card:hover{
 
-    transform:translateY(-10px);
+    transform:translateY(-8px);
 
 }
+
 
 .card h3{
 
-    color:#2E7D32;
+    color:#388e3c;
+
     margin-bottom:15px;
 
 }
+
+
 
 /* Botões */
 
 button{
 
-    background:#2E7D32;
+    background:#2e7d32;
+
     color:white;
 
     border:none;
 
-    padding:14px 28px;
+    padding:12px 20px;
 
-    border-radius:10px;
+    border-radius:8px;
 
     cursor:pointer;
-
-    transition:.3s;
 
     margin-top:15px;
 
 }
 
+
 button:hover{
 
-    background:#1B5E20;
-    transform:scale(1.05);
+    background:#1b5e20;
 
 }
 
-/* Formulário */
 
-form{
 
-    width:420px;
-    max-width:95%;
-    margin:auto;
+/* Campo de entrada */
 
-    display:flex;
-    flex-direction:column;
-
-}
-
-label{
-
-    text-align:left;
-    margin-top:18px;
-    margin-bottom:8px;
-
-    font-weight:bold;
-
-}
-
-input,
-select{
+input{
 
     padding:12px;
 
-    border:1px solid #bbb;
-
     border-radius:8px;
 
-    font-size:16px;
+    border:1px solid #999;
+
+    width:250px;
 
 }
 
-input:focus,
-select:focus{
 
-    outline:none;
 
-    border:2px solid #43A047;
-
-}
-
-/* Resultado */
+/* Resultado da calculadora */
 
 #resultado{
 
-    margin-top:25px;
-
-    color:#2E7D32;
-
-}
-
-/* Mensagem */
-
-#mensagem{
+    color:#2e7d32;
 
     margin-top:20px;
 
-    color:#1B5E20;
-
-    font-size:22px;
-
 }
+
+
 
 /* Rodapé */
 
 footer{
 
-    background:#2E7D32;
+    background:#1b5e20;
+
     color:white;
 
     text-align:center;
 
-    padding:30px;
-
-    margin-top:40px;
+    padding:20px;
 
 }
 
-/* ===========================
-   MODO ESCURO
-   =========================== */
 
-.dark{
 
-    background:#1b1b1b;
-    color:white;
+/* Celular */
 
-}
+@media(max-width:700px){
 
-.dark section{
-
-    background:#1b1b1b;
-
-}
-
-.dark .card{
-
-    background:#333;
-    color:white;
-
-}
-
-.dark h2{
-
-    color:#8BC34A;
-
-}
-
-.dark input,
-.dark select{
-
-    background:#444;
-    color:white;
-    border:1px solid #777;
-
-}
-
-/* ===========================
-   RESPONSIVO
-   =========================== */
-
-@media(max-width:900px){
-
-    .textoBanner h2{
-
-        font-size:38px;
-
-    }
-
-    .textoBanner p{
-
-        font-size:20px;
-
-    }
-
-}
-
-@media(max-width:768px){
-
-    nav{
-
-        flex-direction:column;
-
-    }
-
-    .banner{
-
-        height:350px;
-
-    }
-
-    .textoBanner h2{
-
-        font-size:30px;
-
-    }
-
-    .textoBanner p{
-
-        font-size:18px;
-
-    }
-
-    section{
-
-        padding:40px 20px;
-
-    }
-
-}
-
-@media(max-width:500px){
 
     header h1{
 
@@ -421,23 +266,24 @@ footer{
 
     }
 
-    section h2{
 
-        font-size:26px;
+    nav{
+
+        flex-direction:column;
 
     }
+
+
+    section{
+
+        padding:30px 20px;
+
+    }
+
 
     .card{
 
         width:100%;
-
-    }
-
-    #modoEscuro{
-
-        position:static;
-        margin:20px auto;
-        display:block;
 
     }
 
