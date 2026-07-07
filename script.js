@@ -43,11 +43,15 @@ let texto = document.getElementById("texto");
 
 let lista = [
 
-"Algumas plantas podem crescer usando apenas luz artificial.",
+    "Tecnologia da NASA: A iluminação e irrigação indoor foram aprimoradas para alimentar astronautas no espaço.",
 
-"O cultivo indoor permite plantar em apartamentos.",
+    "95% menos água: Sistemas fechados reciclam a água, gastando muito menos que a agricultura comum.",
 
-"A tecnologia ajuda a economizar água."
+    "Luz sob medida: LEDs azuis aceleram o crescimento das folhas e os vermelhos estimulam as flores.",
+
+    "Super velocidade: Com clima e luz controlados, as plantas crescem até duas vezes mais rápido.",
+
+    "Sem estações: É possível colher qualquer vegetal o ano todo, ignorando o inverno ou o verão."
 
 ];
 
