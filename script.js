@@ -2,13 +2,15 @@
 
 const curiosidades = [
 
-    "💧 O cultivo indoor pode economizar muita água comparado ao cultivo tradicional.",
+"🌱 Algumas fazendas indoor utilizam inteligência artificial para monitorar o crescimento das plantas.",
 
-    "💡 As lâmpadas LED ajudam as plantas a crescer usando menos energia.",
+"🏢 Existem fazendas verticais que cultivam alimentos em prédios e espaços urbanos pequenos.",
 
-    "🌱 O ambiente controlado diminui o aparecimento de pragas.",
+"🥬 Alfaces, ervas e temperos estão entre as plantas mais cultivadas em sistemas indoor.",
 
-    "🌎 O cultivo próximo das cidades reduz o transporte e a poluição."
+"🚀 A tecnologia de cultivo indoor também é estudada para produzir alimentos em missões espaciais.",
+
+"🌿 O primeiro conceito de agricultura vertical surgiu para aproveitar melhor os espaços das grandes cidades."
 
 ];
 
