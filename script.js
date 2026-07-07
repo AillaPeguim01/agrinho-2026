@@ -1,140 +1,65 @@
-// Lista de curiosidades sobre cultivo indoor
+// Captura elementos do HTML
 
-const curiosidades = [
-
-"🌱 Algumas fazendas indoor utilizam inteligência artificial para monitorar o crescimento das plantas.",
-
-"🏢 Existem fazendas verticais que cultivam alimentos em prédios e espaços urbanos pequenos.",
-
-"🥬 Alfaces, ervas e temperos estão entre as plantas mais cultivadas em sistemas indoor.",
-
-"🚀 A tecnologia de cultivo indoor também é estudada para produzir alimentos em missões espaciais.",
-
-"🌿 O primeiro conceito de agricultura vertical surgiu para aproveitar melhor os espaços das grandes cidades."
-
-];
+let botaoNome = document.getElementById("botaoNome");
+let campoNome = document.getElementById("nome");
+let mensagem = document.getElementById("mensagem");
 
 
-// Guarda a posição da curiosidade atual
+// Função para criar mensagem personalizada
 
-let indice = 0;
+botaoNome.addEventListener("click", function(){
 
-
-// Seleciona os elementos do HTML
-
-const botaoCuriosidade = document.getElementById("botaoCuriosidade");
-
-const textoCuriosidade = document.getElementById("textoCuriosidade");
+    let nomeUsuario = campoNome.value;
 
 
+    if(nomeUsuario == ""){
 
-// Quando clicar no botão, muda a curiosidade
-
-botaoCuriosidade.addEventListener("click", function(){
-
-
-    textoCuriosidade.textContent = curiosidades[indice];
-
-
-    indice++;
-
-
-    if(indice >= curiosidades.length){
-
-        indice = 0;
+        mensagem.textContent =
+        "Digite seu nome para continuar.";
 
     }
 
+    else{
+
+        mensagem.textContent =
+        "Olá, " + nomeUsuario +
+        "! Bem-vindo ao mundo do cultivo indoor.";
+
+    }
 
 });
 
-// Calculadora de consumo da iluminação LED
-
-// Calculadora de consumo da iluminação LED
-
-const botaoCalcular = document.getElementById("calcular");
 
 
-botaoCalcular.addEventListener("click", function(){
+// Modo escuro
+
+let modo = document.getElementById("modoEscuro");
 
 
-    // Recebe os valores digitados
+modo.addEventListener("click", function(){
 
-    let potencia = Number(
-        document.getElementById("potencia").value
-    );
+    document.body.classList.toggle("escuro");
 
-
-    let horas = Number(
-        document.getElementById("horas").value
-    );
-
-
-    let resultado = document.getElementById("resultado");
+});
 
 
 
-    // Potências de LED aceitas no sistema
 
-    const potenciasPermitidas = [
-        20,
-        30,
-        40,
-        50,
-        100,
-        150,
-        200
-    ];
+// Contador de plantas
+
+let botaoContador =
+document.getElementById("contador");
 
 
-
-    // Verifica se a potência existe na lista
-
-    if(!potenciasPermitidas.includes(potencia)){
+let quantidade = 0;
 
 
-        resultado.textContent =
-        "Escolha uma potência LED disponível: 20W, 30W, 40W, 50W, 100W, 150W ou 200W.";
+botaoContador.addEventListener("click", function(){
+
+    quantidade++;
 
 
-        return;
-
-    }
-
-
-
-    // Verifica se as horas estão corretas
-
-    if(horas <= 0 || horas > 24){
-
-
-        resultado.textContent =
-        "A iluminação deve funcionar entre 1 e 24 horas por dia.";
-
-
-        return;
-
-    }
-
-
-
-    // Cálculo do consumo mensal
-
-    let consumo =
-    (potencia / 1000) * horas * 30;
-
-
-
-    // Mostra resultado
-
-    resultado.textContent =
-
-    "💡 Uma lâmpada LED de "
-    + potencia
-    + "W ligada "
-    + horas
-    + " horas por dia consumirá aproximadamente "
-    + consumo.toFixed(2)
-    + " kWh por mês.";
+    botaoContador.textContent =
+    "Plantas cultivadas: " + quantidade;
 
 });

@@ -1,240 +1,118 @@
-/* Configuração geral */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
-body{
+body {
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
 
-    background:#f2fff2;
+    background-color: #eef8ee;
 
-    color:#333;
+    color: #1d3b1d;
+
+    transition: 0.4s;
 
 }
 
 
-/* Cabeçalho */
+header {
 
-header{
+    background-color: #287233;
 
-    background:#2e7d32;
+    color: white;
+
+    padding: 20px;
+
+    text-align: center;
+
+}
+
+
+nav {
+
+    margin: 15px;
+
+}
+
+
+nav a {
 
     color:white;
 
-    text-align:center;
-
-    padding:30px;
-
-}
-
-header img{
-
-    width:90px;
-
-    height:90px;
-
-    border-radius:50%;
-
-    object-fit:cover;
-
-    border:3px solid white;
-
-}
-
-
-header h1{
-
-    font-size:40px;
+    text-decoration:none;
 
     margin:10px;
 
 }
 
 
-header p{
+nav a:hover {
 
-    margin-bottom:20px;
-
-}
-
-
-
-/* Menu */
-
-nav{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:20px;
-
-    flex-wrap:wrap;
-
-}
-
-
-nav a{
-
-    color:white;
-
-    text-decoration:none;
-
-    padding:8px 15px;
-
-    border-radius:10px;
-
-    transition:0.3s;
-
-}
-
-
-nav a:hover{
-
-    background:white;
-
-    color:#2e7d32;
+    color:#b9ffb9;
 
 }
 
 
 
-/* Seções */
+button {
 
-section{
-
-    padding:40px 10%;
-
-    text-align:center;
-
-}
-
-
-section h2{
-
-    color:#2e7d32;
-
-    margin-bottom:20px;
-
-    font-size:30px;
-
-}
-
-
-section p{
-
-    line-height:1.7;
-
-}
-
-
-
-/* Cards de benefícios */
-
-.cards{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:20px;
-
-    flex-wrap:wrap;
-
-    margin-top:30px;
-
-}
-
-
-.card{
-
-    background:white;
-
-    width:250px;
-
-    padding:20px;
-
-    border-radius:15px;
-
-    box-shadow:0 5px 15px #0002;
-
-    transition:0.3s;
-
-}
-
-
-.card:hover{
-
-    transform:translateY(-8px);
-
-}
-
-
-.card h3{
-
-    color:#388e3c;
-
-    margin-bottom:15px;
-
-}
-
-
-
-/* Botões */
-
-button{
-
-    background:#2e7d32;
+    background-color:#45a049;
 
     color:white;
 
     border:none;
 
-    padding:12px 20px;
+    padding:10px 20px;
 
-    border-radius:8px;
+    border-radius:10px;
 
     cursor:pointer;
 
-    margin-top:15px;
+    transition:0.3s;
 
 }
 
 
-button:hover{
+button:hover {
 
-    background:#1b5e20;
+    background-color:#256b2c;
 
-}
-
-
-
-/* Campo de entrada */
-
-input{
-
-    padding:12px;
-
-    border-radius:8px;
-
-    border:1px solid #999;
-
-    width:250px;
+    transform:scale(1.05);
 
 }
 
 
 
-/* Resultado da calculadora */
+main {
 
-#resultado{
+    width:90%;
 
-    color:#2e7d32;
+    max-width:1000px;
+
+    margin:auto;
+
+}
+
+
+
+section {
+
+    padding:40px 0;
+
+}
+
+
+
+img {
+
+    width:100%;
+
+    max-width:600px;
+
+    border-radius:20px;
 
     margin-top:20px;
 
@@ -242,11 +120,51 @@ input{
 
 
 
-/* Rodapé */
+.cards {
 
-footer{
+    display:flex;
 
-    background:#1b5e20;
+    gap:20px;
+
+    justify-content:center;
+
+}
+
+
+
+article {
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 10px #999;
+
+    flex:1;
+
+}
+
+
+
+input {
+
+    display:block;
+
+    width:100%;
+
+    padding:10px;
+
+    margin:10px 0;
+
+}
+
+
+
+footer {
+
+    background:#287233;
 
     color:white;
 
@@ -258,35 +176,41 @@ footer{
 
 
 
-/* Celular */
+/* Modo escuro */
+
+.escuro {
+
+    background:#121212;
+
+    color:white;
+
+}
+
+
+.escuro article {
+
+    background:#222;
+
+}
+
+
+
+/* Responsividade */
 
 @media(max-width:700px){
 
-
-    header h1{
-
-        font-size:30px;
-
-    }
-
-
-    nav{
+    .cards{
 
         flex-direction:column;
 
     }
 
 
-    section{
+    nav a{
 
-        padding:30px 20px;
+        display:block;
 
-    }
-
-
-    .card{
-
-        width:100%;
+        margin:15px;
 
     }
 

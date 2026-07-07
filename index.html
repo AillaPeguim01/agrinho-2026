@@ -2,239 +2,165 @@
 <html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Cultivo Indoor - Agrinho 2026</title>
+    <title>Cultivo Indoor</title>
 
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
-
 
 <body>
 
+    <header>
+        <h1>🌱 Cultivo Indoor</h1>
 
-<header>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#vantagens">Vantagens</a>
+            <a href="#passos">Como funciona</a>
+            <a href="#contato">Contato</a>
+        </nav>
 
-    <img src="Captura de tela 2026-07-07 180054.png" alt="Logo Cultivo Indoor">
+        <button id="modoEscuro">🌙 Modo escuro</button>
+    </header>
 
-    <h1>Cultivo Indoor</h1>
 
+    <main>
 
-    <nav>
+        <section id="inicio">
 
-        <a href="#sobre">O que é</a>
+            <h2>Plante dentro de casa e transforme espaços</h2>
 
-        <a href="#beneficios">Benefícios</a>
+            <p>
+                O cultivo indoor é uma forma de produzir plantas em ambientes
+                internos utilizando iluminação, controle de água e cuidados
+                específicos para criar um ambiente ideal.
+            </p>
 
-        <a href="#curiosidades">Curiosidades</a>
+            <img src="img/cultivo.jpg" alt="Plantas cultivadas em ambiente interno">
 
-        <a href="#calculadora">Calculadora</a>
+        </section>
 
-    </nav>
 
+        <section id="usuario">
 
-</header>
+            <h2>Conheça seu espaço verde</h2>
 
+            <label for="nome">Digite seu nome:</label>
 
+            <input id="nome" type="text" placeholder="Seu nome">
 
-<section id="sobre">
+            <button id="botaoNome">
+                Mostrar mensagem
+            </button>
 
+            <p id="mensagem"></p>
 
-<h2>O que é Cultivo Indoor?</h2>
+        </section>
 
 
-<p>
 
-O cultivo indoor é uma técnica de produção de plantas em ambientes fechados,
-onde fatores como iluminação, temperatura, água e nutrientes são controlados.
+        <section id="vantagens">
 
-Com o uso de tecnologias como lâmpadas LED e sistemas de irrigação,
-é possível cultivar alimentos durante todo o ano utilizando menos recursos naturais.
+            <h2>Benefícios do cultivo indoor</h2>
 
-</p>
+            <div class="cards">
 
+                <article>
+                    <h3>🌿 Economia</h3>
+                    <p>
+                        Permite cultivar alimentos mesmo em pequenos espaços.
+                    </p>
+                </article>
 
-</section>
 
+                <article>
+                    <h3>💧 Controle</h3>
+                    <p>
+                        É possível controlar água, luz e nutrientes.
+                    </p>
+                </article>
 
 
+                <article>
+                    <h3>🏠 Sustentabilidade</h3>
+                    <p>
+                        Ajuda a aproximar a produção de alimentos das pessoas.
+                    </p>
+                </article>
 
-<section id="beneficios">
+            </div>
 
+        </section>
 
-<h2>Benefícios do Cultivo Indoor</h2>
 
 
-<div class="cards">
+        <section id="passos">
 
+            <h2>Etapas do cultivo</h2>
 
-<div class="card">
+            <ol>
+                <li>Escolher o local adequado.</li>
+                <li>Selecionar iluminação e recipientes.</li>
+                <li>Controlar água e nutrientes.</li>
+                <li>Acompanhar o crescimento das plantas.</li>
+            </ol>
 
-<h3>💧 Economia de água</h3>
 
-<p>
+            <button id="contador">
+                Plantas cultivadas: 0
+            </button>
 
-Sistemas controlados evitam desperdícios e permitem reaproveitar a água.
+        </section>
 
-</p>
 
-</div>
 
+        <section id="contato">
 
+            <h2>Envie uma mensagem</h2>
 
-<div class="card">
 
-<h3>💡 Luz LED</h3>
+            <form>
 
-<p>
+                <label for="email">
+                    Email:
+                </label>
 
-A iluminação artificial ajuda no crescimento das plantas com eficiência.
+                <input type="email" id="email"
+                placeholder="Digite seu email">
 
-</p>
 
-</div>
+                <label for="duvida">
+                    Comentário:
+                </label>
 
+                <input type="text" id="duvida"
+                placeholder="Sua mensagem">
 
 
-<div class="card">
+                <button type="submit">
+                    Enviar
+                </button>
 
-<h3>🌱 Menos agrotóxicos</h3>
+            </form>
 
-<p>
+        </section>
 
-O ambiente protegido reduz o aparecimento de pragas.
 
-</p>
+    </main>
 
-</div>
 
+    <footer>
 
+        <p>
+            Projeto Agrinho - Cultivo Indoor 🌱
+        </p>
 
-<div class="card">
+    </footer>
 
-<h3>🌎 Sustentabilidade</h3>
 
-<p>
-
-A produção próxima dos consumidores reduz impactos ambientais.
-
-</p>
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-<section id="curiosidades">
-
-
-<h2>Curiosidades</h2>
-
-
-<p id="textoCuriosidade">
-
-Clique no botão para descobrir uma curiosidade.
-
-</p>
-
-
-<button id="botaoCuriosidade">
-
-Mostrar curiosidade
-
-</button>
-
-
-</section>
-
-
-
-
-<<section id="calculadora">
-
-<h2>Calculadora de Energia LED</h2>
-
-<p>
-
-No cultivo indoor, a iluminação LED permite controlar a quantidade de luz
-recebida pelas plantas, evitando que períodos de pouca luz solar, como dias
-nublados ou chuvosos, prejudiquem o desenvolvimento.
-
-</p>
-
-
-<label for="potencia">
-
-Potência da lâmpada LED:
-
-</label>
-
-
-<input 
-type="number"
-id="potencia"
-placeholder="Ex: 50"
-min="20"
-max="200">
-
-
-
-<label for="horas">
-
-Horas ligada por dia:
-
-</label>
-
-
-<input 
-type="number"
-id="horas"
-placeholder="Ex: 12"
-min="1"
-max="24">
-
-
-
-<button id="calcular">
-
-Calcular consumo
-
-</button>
-
-
-<h3 id="resultado"></h3>
-
-
-</section>
-
-
-
-
-<footer>
-
-
-<p>
-
-Projeto Agrinho 2026 - Cultivo Indoor
-
-</p>
-
-
-</footer>
-
-
-
-<script src="script.js"></script>
-
+<script src="js/script.js"></script>
 
 </body>
 
