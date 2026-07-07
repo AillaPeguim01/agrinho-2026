@@ -32,7 +32,6 @@ header{
 
 }
 
-
 header img{
 
     width:90px;
@@ -40,6 +39,10 @@ header img{
     height:90px;
 
     border-radius:50%;
+
+    object-fit:cover;
+
+    border:3px solid white;
 
 }
 
