@@ -50,13 +50,15 @@ botaoCuriosidade.addEventListener("click", function(){
 
 // Calculadora de consumo da iluminação LED
 
+// Calculadora de consumo da iluminação LED
+
 const botaoCalcular = document.getElementById("calcular");
 
 
 botaoCalcular.addEventListener("click", function(){
 
 
-    // Recebe os valores digitados pelo usuário
+    // Recebe os valores digitados
 
     let potencia = Number(
         document.getElementById("potencia").value
@@ -72,12 +74,28 @@ botaoCalcular.addEventListener("click", function(){
 
 
 
-    // Verifica se os valores são válidos
+    // Potências de LED aceitas no sistema
 
-    if(potencia <= 0 || horas <= 0){
+    const potenciasPermitidas = [
+        20,
+        30,
+        40,
+        50,
+        100,
+        150,
+        200
+    ];
+
+
+
+    // Verifica se a potência existe na lista
+
+    if(!potenciasPermitidas.includes(potencia)){
+
 
         resultado.textContent =
-        "Digite valores válidos.";
+        "Escolha uma potência LED disponível: 20W, 30W, 40W, 50W, 100W, 150W ou 200W.";
+
 
         return;
 
@@ -85,16 +103,37 @@ botaoCalcular.addEventListener("click", function(){
 
 
 
-    // Calcula o consumo mensal em kWh
+    // Verifica se as horas estão corretas
 
-    let consumo = (potencia / 1000) * horas * 30;
+    if(horas <= 0 || horas > 24){
+
+
+        resultado.textContent =
+        "A iluminação deve funcionar entre 1 e 24 horas por dia.";
+
+
+        return;
+
+    }
 
 
 
+    // Cálculo do consumo mensal
+
+    let consumo =
+    (potencia / 1000) * horas * 30;
+
+
+
+    // Mostra resultado
 
     resultado.textContent =
 
-    "💡 O sistema de iluminação consumirá aproximadamente "
+    "💡 Uma lâmpada LED de "
+    + potencia
+    + "W ligada "
+    + horas
+    + " horas por dia consumirá aproximadamente "
     + consumo.toFixed(2)
     + " kWh por mês.";
 
