@@ -25,6 +25,7 @@ nav a {
     color: white;
     text-decoration: none;
     margin: 0 10px;
+    transition: color 0.3s ease; /* Transição suave adicionada */
 }
 
 nav a:hover {
@@ -44,6 +45,7 @@ button {
     margin: 5px;
     cursor: pointer;
     border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transição suave adicionada */
 }
 
 button:hover {
@@ -85,8 +87,6 @@ footer {
     text-align: center;
     padding: 15px;
 }
-
-
 
 /* Responsivo */
 
