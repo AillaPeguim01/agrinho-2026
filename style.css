@@ -1,136 +1,82 @@
-body {
-
-    font-family: Arial;
-    background:#e8f5e9;
-    margin:0;
-    color:#222;
-
-}
-
-
-header {
-
-    background:#2e7d32;
-    color:white;
-    text-align:center;
-    padding:20px;
-
-}
-
-
-header img {
-
-    width:100px;
-    border-radius:50%;
-
-}
-
-
-nav a {
-
-    color:white;
-    margin:10px;
-    text-decoration:none;
-
-}
-
-
-nav a:hover {
-
-    color:#a5d6a7;
-
-}
-
-
-.botoes {
+.secao h2 {
 
     text-align:center;
-    margin:20px;
+    font-size:40px;
+    color:#218739;
+    margin-bottom:40px;
 
 }
 
 
-button {
+.cards {
 
-    background:#388e3c;
-    color:white;
-    border:0;
-    padding:10px;
-    margin:5px;
-    cursor:pointer;
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap;
 
 }
 
 
-button:hover {
+.card {
 
-    background:#1b5e20;
-
-}
-
-
-main {
-
-    width:90%;
-    margin:auto;
-
-}
-
-
-section {
+    width:280px;
+    min-height:430px;
 
     background:white;
-    padding:20px;
-    margin:20px 0;
-    border-radius:10px;
 
-}
+    border-radius:20px;
 
+    padding:30px;
 
-h2 {
-
-    color:#2e7d32;
-
-}
-
-
-footer {
-
-    background:#2e7d32;
-    color:white;
     text-align:center;
-    padding:15px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+
+    transition:0.3s;
 
 }
 
 
-/* modo escuro */
+.card:hover {
 
-.escuro {
-
-    background:#222;
-    color:white;
+    transform:translateY(-10px);
 
 }
 
 
-.escuro section {
+.card h3 {
 
-    background:#333;
+    color:#218739;
+    font-size:24px;
+    margin-bottom:20px;
 
 }
 
 
-/* celular */
+.card p {
 
-@media(max-width:600px){
+    font-size:17px;
+    line-height:1.7;
 
-    nav {
+}
 
-        display:flex;
-        flex-direction:column;
 
-    }
 
+@media(max-width:700px){
+
+.cards{
+
+    flex-direction:column;
+    align-items:center;
+
+}
+
+
+.card{
+
+    width:90%;
+
+}
 
 }
