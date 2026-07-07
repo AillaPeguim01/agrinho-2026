@@ -1,212 +1,119 @@
-section:not(.secao) {
-
-    background:white;
-    padding:35px;
-    margin:30px auto;
-    border-radius:20px;
-    width:90%;
-    max-width:1000px;
-
-    box-shadow:0 10px 25px rgba(0,0,0,0.08);
-
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #e8f5e9;
+    color: #222;
 }
 
-.secao h2 {
-
-    text-align:center;
-    font-size:40px;
-    color:#218739;
-    margin-bottom:40px;
-
+header {
+    background: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
+header img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #a5d6a7;
+}
+
+.botoes {
+    text-align: center;
+    margin: 20px;
+}
+
+button {
+    background: #388e3c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #1b5e20;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+section {
+    background: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #2e7d32;
+}
 
 .cards {
-
-    display:flex;
-    justify-content:center;
-    gap:35px;
-    flex-wrap:wrap;
-
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
-
 
 .card {
-
-    width:280px;
-    min-height:430px;
-
-    background:white;
-
-    border-radius:20px;
-
-    padding:30px;
-
-    text-align:center;
-
-    box-shadow:0 10px 25px rgba(0,0,0,0.12);
-
-    transition:0.3s;
-
+    background: #f8fff8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
 }
 
-
-.card:hover {
-
-    transform:translateY(-10px);
-
+footer {
+    background: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 15px;
 }
 
+/* Modo escuro */
 
-.card h3 {
-
-    color:#218739;
-    font-size:24px;
-    margin-bottom:20px;
-
+.escuro {
+    background: #222;
+    color: white;
 }
 
-
-.card p {
-
-    font-size:17px;
-    line-height:1.7;
-
+.escuro section {
+    background: #333;
 }
 
-
-
-@media(max-width:700px){
-
-.cards{
-
-    flex-direction:column;
-    align-items:center;
-
+.escuro h2 {
+    color: #8bc34a;
 }
 
-
-.card{
-
-    width:90%;
-
+.escuro header,
+.escuro footer {
+    background: #111;
 }
-
-}
-/* Títulos das áreas */
-
-.secao h2 {
-
-    text-align:center;
-    color:#238b3b;
-    font-size:42px;
-    margin-bottom:45px;
-
-}
-
-
-
-/* Área dos cards */
-
-.cards {
-
-    display:flex;
-    justify-content:center;
-    align-items:stretch;
-    gap:38px;
-    flex-wrap:wrap;
-
-}
-
-
-
-/* Card individual */
-
-.card {
-
-    background:#ffffff;
-
-    width:325px;
-    min-height:530px;
-
-    padding:35px 30px;
-
-    border-radius:20px;
-
-    text-align:center;
-
-    box-shadow:
-    0px 10px 25px rgba(0,0,0,0.12);
-
-    transition:0.3s;
-
-}
-
-
-
-/* Efeito quando passa o mouse */
-
-.card:hover {
-
-    transform:translateY(-10px);
-
-}
-
-
-
-/* Títulos dos cards */
-
-.card h3 {
-
-    color:#218739;
-
-    font-size:25px;
-
-    margin-bottom:25px;
-
-}
-
-
-
-/* Texto */
-
-.card p {
-
-    font-size:19px;
-
-    line-height:1.8;
-
-    color:#222;
-
-}
-
-
 
 /* Responsivo */
 
-@media(max-width:700px){
+@media (max-width: 600px) {
 
-
-.cards {
-
-    flex-direction:column;
-    align-items:center;
-
-}
-
-
-.card {
-
-    width:90%;
-
-}
-
-
-.secao h2 {
-
-    font-size:32px;
-
-}
-
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
 
 }

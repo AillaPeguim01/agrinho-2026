@@ -1,85 +1,50 @@
-// Botão de modo escuro
-let tema = document.getElementById("tema");
+// Modo escuro
 
-
-tema.onclick = function(){
-
+document.getElementById("tema").onclick = function () {
     document.body.classList.toggle("escuro");
-
 };
 
-
-
-// Alterar tamanho da fonte
+// Tamanho da fonte
 
 let tamanho = 16;
 
-
-document.getElementById("maior").onclick = function(){
-
-    tamanho = tamanho + 2;
-
+document.getElementById("maior").onclick = function () {
+    tamanho += 2;
     document.body.style.fontSize = tamanho + "px";
-
 };
 
-
-document.getElementById("menor").onclick = function(){
-
-    tamanho = tamanho - 2;
-
+document.getElementById("menor").onclick = function () {
+    tamanho -= 2;
     document.body.style.fontSize = tamanho + "px";
-
 };
 
+// Curiosidades
 
-
-// Mostrar curiosidade
-
-let curiosidade = document.getElementById("curiosidade");
-
-let texto = document.getElementById("texto");
-
-
-let lista = [
-
-    "👩🏻‍💻Tecnologia da NASA: A iluminação e irrigação indoor foram aprimoradas para alimentar astronautas no espaço.",
-
-    "💧95% menos água: Sistemas fechados reciclam a água, gastando muito menos que a agricultura comum.",
-
-    "☀️Luz sob medida: LEDs azuis aceleram o crescimento das folhas e os vermelhos estimulam as flores.",
-
-    "⚡Super velocidade: Com clima e luz controlados, as plantas crescem até duas vezes mais rápido.",
-
-    "🌦️Sem estações: É possível colher qualquer vegetal o ano todo, ignorando o inverno ou o verão."
-
+const lista = [
+    "👩🏻‍💻 Tecnologia da NASA: a iluminação e irrigação indoor foram aprimoradas para alimentar astronautas.",
+    "💧 Sistemas indoor podem economizar até 95% de água.",
+    "☀️ LEDs azuis favorecem folhas e LEDs vermelhos estimulam flores.",
+    "⚡ Em ambiente controlado, algumas plantas crescem até duas vezes mais rápido.",
+    "🌦️ É possível produzir alimentos durante todo o ano."
 ];
 
+document.getElementById("curiosidade").onclick = function () {
 
-curiosidade.onclick = function(){
+    const numero = Math.floor(Math.random() * lista.length);
 
-    let numero = Math.floor(Math.random()*lista.length);
-
-    texto.innerHTML = lista[numero];
+    document.getElementById("texto").innerHTML = lista[numero];
 
 };
-
-
 
 // Formulário
 
-let formulario = document.getElementById("form");
-
-
-formulario.onsubmit = function(event){
+document.getElementById("form").onsubmit = function (event) {
 
     event.preventDefault();
 
-
-    let nome = document.getElementById("nome").value;
-
+    const nome = document.getElementById("nome").value;
 
     document.getElementById("resultado").innerHTML =
-    "Olá, " + nome + "! Obrigado por visitar o site.";
+        `Olá, ${nome}! Obrigado por visitar o site.`;
 
 };

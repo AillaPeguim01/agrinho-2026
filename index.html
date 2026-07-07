@@ -10,246 +10,128 @@
 
 <body>
 
-<header>
+    <header>
+        <img src="Captura de tela 2026-07-07 180054.png" alt="Logo do cultivo indoor">
 
-    <img src="Captura de tela 2026-07-07 180054.png" alt="Logo do cultivo indoor">
+        <h1>🌱 Cultivo Indoor</h1>
 
-    <h1>🌱Cultivo Indoor</h1>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#beneficios">Benefícios</a>
+            <a href="#maleficios">Malefícios</a>
+            <a href="#curiosidades">Curiosidades</a>
+        </nav>
+    </header>
 
-    <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#beneficios">Benefícios</a>
-        <a href="#maleficios">Malefícios</a>
-        <a href="#curiosidades">Curiosidades</a>
-    </nav>
+    <section class="botoes">
+        <button id="tema">Modo Escuro</button>
+        <button id="maior">A+</button>
+        <button id="menor">A-</button>
+    </section>
 
-</header>
+    <main>
 
+        <section id="sobre">
+            <h2>O que é cultivo indoor?</h2>
 
-<section class="botoes">
+            <p>
+                Cultivo indoor é a prática de produzir plantas dentro de ambientes fechados. Em vez de depender da
+                natureza, esse sistema utiliza tecnologia para substituir os recursos naturais. A luz do sol é trocada
+                por lâmpadas de LED especiais, enquanto temperatura e umidade são controladas por ventiladores e
+                exaustores. Essa técnica permite produzir alimentos frescos durante todo o ano.
+            </p>
+        </section>
 
-    <button id="tema">Modo Escuro</button>
-    <button id="maior">A+</button>
-    <button id="menor">A-</button>
+        <section id="beneficios">
+            <h2>Benefícios</h2>
 
-</section>
+            <div class="cards">
 
+                <div class="card">
+                    <h3>💧 Economia de Água</h3>
+                    <p>O cultivo indoor economiza até 90% de água graças ao reaproveitamento em sistemas fechados.</p>
+                </div>
 
+                <div class="card">
+                    <h3>💡 Luz LED</h3>
+                    <p>As lâmpadas LED fornecem o espectro ideal para a fotossíntese gastando pouca energia.</p>
+                </div>
 
-<main>
+                <div class="card">
+                    <h3>🌱 Menos Agrotóxicos</h3>
+                    <p>O ambiente protegido reduz pragas e diminui a necessidade de produtos químicos.</p>
+                </div>
 
+                <div class="card">
+                    <h3>🌎 Sustentabilidade</h3>
+                    <p>A produção próxima aos consumidores reduz transporte, desperdício e emissão de poluentes.</p>
+                </div>
 
-<section id="sobre">
+            </div>
+        </section>
 
-<h2>O que é cultivo indoor?</h2>
+        <section id="maleficios">
 
-<p>
-Cultivo indoor é a prática de produzir plantas dentro de ambientes fechados.
+            <h2>Malefícios</h2>
 
-Em vez de depender da natureza, esse sistema utiliza tecnologia para substituir
-os recursos naturais. A luz do sol é trocada por lâmpadas de LED especiais,
-e o clima (temperatura e umidade) é controlado por ventiladores e exaustores.
+            <div class="cards">
 
-É uma técnica muito usada em cidades para garantir alimentos frescos o ano todo,
-independente do clima.
-</p>
+                <div class="card">
+                    <h3>💰 Alto Investimento</h3>
+                    <p>O sistema exige equipamentos e infraestrutura, aumentando o custo inicial.</p>
+                </div>
 
-</section>
+                <div class="card">
+                    <h3>⚡ Consumo de Energia</h3>
+                    <p>A iluminação artificial e os sistemas de climatização aumentam o consumo elétrico.</p>
+                </div>
 
+                <div class="card">
+                    <h3>🔧 Conhecimento Técnico</h3>
+                    <p>É necessário entender sobre iluminação, nutrientes, irrigação e temperatura.</p>
+                </div>
 
+                <div class="card">
+                    <h3>🏭 Dependência de Equipamentos</h3>
+                    <p>Falhas nos equipamentos podem comprometer toda a produção.</p>
+                </div>
 
-<!-- BENEFÍCIOS -->
+            </div>
 
-<section id="beneficios" class="secao">
+        </section>
 
-<h2>Benefícios</h2>
+        <section id="curiosidades">
 
+            <h2>Curiosidades</h2>
 
-<div class="cards">
+            <p id="texto">Clique no botão para ver uma curiosidade.</p>
 
+            <button id="curiosidade">Ver curiosidade</button>
 
-<div class="card">
+        </section>
 
-<h3>💧 Economia de Água</h3>
+        <section>
 
-<p>
-O cultivo indoor economiza até 90% de água em comparação ao método tradicional.
-Como o sistema é fechado, a água não evapora nem se perde na terra; ela é
-capturada, filtrada e reaproveitada em um circuito contínuo.
-</p>
+            <h2>Digite seu nome</h2>
 
-</div>
+            <form id="form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
 
+                <button type="submit">Enviar</button>
+            </form>
 
+            <p id="resultado"></p>
 
-<div class="card">
+        </section>
 
-<h3>💡 Luz LED</h3>
+    </main>
 
-<p>
-As lâmpadas LED fornecem o espectro de luz ideal para as plantas realizarem
-fotossíntese, acelerando o crescimento e gastando pouca energia.
-</p>
+    <footer>
+        Projeto Agrinho 2026 - Agro Forte, Futuro Sustentável
+    </footer>
 
-</div>
-
-
-
-<div class="card">
-
-<h3>🌱 Menos Agrotóxicos</h3>
-
-<p>
-Como o cultivo acontece em um ambiente protegido, a entrada de pragas e doenças
-é reduzida. Isso diminui a necessidade de produtos químicos nas plantas.
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>🌎 Sustentabilidade</h3>
-
-<p>
-A produção próxima aos centros urbanos reduz transportes, desperdícios e a
-emissão de poluentes, tornando a produção de alimentos mais sustentável.
-</p>
-
-</div>
-
-
-</div>
-
-</section>
-
-
-
-
-<!-- MALEFÍCIOS -->
-
-<section id="maleficios" class="secao">
-
-<h2>Malefícios</h2>
-
-
-<div class="cards">
-
-
-<div class="card">
-
-<h3>💰 Alto Investimento</h3>
-
-<p>
-A montagem de um sistema indoor precisa de lâmpadas, sensores e equipamentos,
-o que pode gerar um custo inicial elevado.
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>⚡ Consumo de Energia</h3>
-
-<p>
-A iluminação artificial, ventilação e controle de temperatura podem aumentar
-o consumo de energia elétrica.
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>🔧 Conhecimento Técnico</h3>
-
-<p>
-É necessário entender sobre luz, nutrientes, água e temperatura para manter
-as plantas saudáveis.
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>🏭 Dependência de Equipamentos</h3>
-
-<p>
-Falhas em sistemas de iluminação ou irrigação podem prejudicar o crescimento
-das plantas e causar perdas.
-</p>
-
-</div>
-
-
-</div>
-
-</section>
-
-
-
-
-
-<section id="curiosidades">
-
-<h2>Curiosidades</h2>
-
-<p id="texto">
-Clique no botão para ver uma curiosidade.
-</p>
-
-<button id="curiosidade">
-Ver curiosidade
-</button>
-
-</section>
-
-
-
-
-
-<section>
-
-<h2>Digite seu nome</h2>
-
-<form id="form">
-
-<label for="nome">Nome:</label>
-
-<input id="nome" type="text">
-
-<button>
-Enviar
-</button>
-
-</form>
-
-
-<p id="resultado"></p>
-
-
-</section>
-
-
-</main>
-
-
-
-<footer>
-
-Projeto Agrinho 2026 - Agro Forte, Futuro Sustentável
-
-</footer>
-
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 
 </body>
 
