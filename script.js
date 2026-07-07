@@ -48,11 +48,7 @@ botaoCuriosidade.addEventListener("click", function(){
 
 });
 
-
-
-
-// Calculadora de economia de água
-
+// Calculadora de consumo da iluminação LED
 
 const botaoCalcular = document.getElementById("calcular");
 
@@ -60,10 +56,15 @@ const botaoCalcular = document.getElementById("calcular");
 botaoCalcular.addEventListener("click", function(){
 
 
-    // Pega o valor digitado pelo usuário
+    // Recebe os valores digitados pelo usuário
 
-    let quantidadePlantas = Number(
-        document.getElementById("plantas").value
+    let potencia = Number(
+        document.getElementById("potencia").value
+    );
+
+
+    let horas = Number(
+        document.getElementById("horas").value
     );
 
 
@@ -71,14 +72,12 @@ botaoCalcular.addEventListener("click", function(){
 
 
 
-    // Verifica se o número é válido
+    // Verifica se os valores são válidos
 
-    if(quantidadePlantas <= 0 || isNaN(quantidadePlantas)){
+    if(potencia <= 0 || horas <= 0){
 
-
-        resultado.textContent = 
-        "Digite uma quantidade válida de plantas.";
-
+        resultado.textContent =
+        "Digite valores válidos.";
 
         return;
 
@@ -86,19 +85,17 @@ botaoCalcular.addEventListener("click", function(){
 
 
 
-    // Cálculo simples
+    // Calcula o consumo mensal em kWh
 
-    let economia = quantidadePlantas * 6;
+    let consumo = (potencia / 1000) * horas * 30;
 
 
 
-    // Mostra o resultado na tela
 
     resultado.textContent =
 
-    "🌱 Com " + quantidadePlantas +
-    " plantas, a economia estimada é de aproximadamente "
-    + economia +
-    " litros de água por mês.";
+    "💡 O sistema de iluminação consumirá aproximadamente "
+    + consumo.toFixed(2)
+    + " kWh por mês.";
 
 });
