@@ -1,167 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Cultivo Indoor</title>
-
-    <link rel="stylesheet" href="css/estilo.css">
+    <title>Cultivo Indoor - Sustentabilidade no Agrinho</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <header>
-        <h1>🌱 Cultivo Indoor</h1>
-
-        <nav>
-            <a href="#inicio">Início</a>
-            <a href="#vantagens">Vantagens</a>
-            <a href="#passos">Como funciona</a>
-            <a href="#contato">Contato</a>
-        </nav>
-
-        <button id="modoEscuro">🌙 Modo escuro</button>
+        <div class="header-container">
+            <img src="assets/logo.png" alt="Logo Cultivo Indoor" class="logo">
+            <nav>
+                <a href="#o-que-e">O que é</a>
+                <a href="#beneficios">Benefícios e Desafios</a>
+                <a href="#curiosidades">Curiosidades</a>
+                <button id="btn-tema" class="btn-interativo">Alternar Modo</button>
+            </nav>
+        </div>
     </header>
 
+    <section class="banner">
+        <div class="banner-content">
+            <h1 id="boas-vindas">Descubra a revolução do Cultivo Indoor!</h1>
+            <p>A agricultura do futuro, dentro da sua casa.</p>
+            <div class="form-grupo">
+                <label for="nome-usuario">Quer personalizar sua leitura? Digite seu nome:</label>
+                <input type="text" id="nome-usuario" placeholder="Ex: Maria">
+                <button id="btn-saudar" class="btn-enviar">Iniciar</button>
+            </div>
+        </div>
+    </section>
 
-    <main>
-
-        <section id="inicio">
-
-            <h2>Plante dentro de casa e transforme espaços</h2>
-
-            <p>
-                O cultivo indoor é uma forma de produzir plantas em ambientes
-                internos utilizando iluminação, controle de água e cuidados
-                específicos para criar um ambiente ideal.
-            </p>
-
-            <img src="img/cultivo.jpg" alt="Plantas cultivadas em ambiente interno">
-
+    <main class="container">
+        
+        <section id="o-que-e" class="card">
+            <h2>O que é Cultivo Indoor?</h2>
+            <p>O cultivo indoor é a prática de produzir plantas, como hortaliças e ervas, em ambientes fechados e controlados. Utilizando luzes artificiais (como LEDs específicos) e sistemas de irrigação ou hidroponia, é possível simular as condições ideais da natureza dentro de salas, apartamentos ou estufas tecnológicas.</p>
         </section>
 
-
-        <section id="usuario">
-
-            <h2>Conheça seu espaço verde</h2>
-
-            <label for="nome">Digite seu nome:</label>
-
-            <input id="nome" type="text" placeholder="Seu nome">
-
-            <button id="botaoNome">
-                Mostrar mensagem
-            </button>
-
-            <p id="mensagem"></p>
-
-        </section>
-
-
-
-        <section id="vantagens">
-
-            <h2>Benefícios do cultivo indoor</h2>
-
-            <div class="cards">
-
-                <article>
-                    <h3>🌿 Economia</h3>
-                    <p>
-                        Permite cultivar alimentos mesmo em pequenos espaços.
-                    </p>
-                </article>
-
-
-                <article>
-                    <h3>💧 Controle</h3>
-                    <p>
-                        É possível controlar água, luz e nutrientes.
-                    </p>
-                </article>
-
-
-                <article>
-                    <h3>🏠 Sustentabilidade</h3>
-                    <p>
-                        Ajuda a aproximar a produção de alimentos das pessoas.
-                    </p>
-                </article>
-
+        <section id="beneficios" class="card">
+            <h2>Prós e Contras</h2>
+            <p>Clique nos botões abaixo para explorar o impacto dessa técnica no nosso dia a dia.</p>
+            
+            <div class="botoes-abas">
+                <button id="aba-beneficios" class="btn-aba ativo">Benefícios</button>
+                <button id="aba-maleficios" class="btn-aba">Desafios / Malefícios</button>
             </div>
 
+            <div id="conteudo-aba" class="conteudo-dinamico">
+                Carregando informações...
+            </div>
         </section>
 
-
-
-        <section id="passos">
-
-            <h2>Etapas do cultivo</h2>
-
-            <ol>
-                <li>Escolher o local adequado.</li>
-                <li>Selecionar iluminação e recipientes.</li>
-                <li>Controlar água e nutrientes.</li>
-                <li>Acompanhar o crescimento das plantas.</li>
-            </ol>
-
-
-            <button id="contador">
-                Plantas cultivadas: 0
-            </button>
-
+        <section id="curiosidades" class="card">
+            <h2>Curiosidades do Cultivo Espacial</h2>
+            <p>Você sabia que a NASA utiliza o cultivo indoor para estudar como alimentar astronautas em Marte? A tecnologia que usamos hoje nas cidades nasceu da exploração espacial!</p>
+            <div class="contador-container">
+                <p>Quantas vezes você achou essa informação útil?</p>
+                <button id="btn-contador" class="btn-interativo">👍 Útil (<span id="num-contador">0</span>)</button>
+            </div>
         </section>
-
-
-
-        <section id="contato">
-
-            <h2>Envie uma mensagem</h2>
-
-
-            <form>
-
-                <label for="email">
-                    Email:
-                </label>
-
-                <input type="email" id="email"
-                placeholder="Digite seu email">
-
-
-                <label for="duvida">
-                    Comentário:
-                </label>
-
-                <input type="text" id="duvida"
-                placeholder="Sua mensagem">
-
-
-                <button type="submit">
-                    Enviar
-                </button>
-
-            </form>
-
-        </section>
-
 
     </main>
 
-
     <footer>
-
-        <p>
-            Projeto Agrinho - Cultivo Indoor 🌱
-        </p>
-
+        <p>&copy; 2026 - Projeto Agrinho: Cultivo Indoor e Sustentabilidade Urbana.</p>
     </footer>
 
-
-<script src="js/script.js"></script>
-
+    <script src="script.js"></script>
 </body>
-
 </html>
