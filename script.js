@@ -129,39 +129,6 @@ botaoEnviar.addEventListener("click", function () {
 
 });
 
-// ---------- CONTADOR DE VISITAS ----------
-
-// Verifica se já existe um contador salvo
-let visitas = localStorage.getItem("visitas");
-
-// Caso seja a primeira visita
-if (visitas === null) {
-
-    visitas = 1;
-
-} else {
-
-    visitas = Number(visitas) + 1;
-
-}
-
-// Salva novamente
-localStorage.setItem("visitas", visitas);
-
-// Cria um elemento na página
-const contador = document.createElement("p");
-
-contador.textContent =
-    "👀 Você visitou esta página " + visitas + " vez(es).";
-
-contador.style.textAlign = "center";
-contador.style.margin = "20px";
-contador.style.fontWeight = "bold";
-contador.style.color = "#2E7D32";
-
-// Adiciona no topo da página
-document.body.insertBefore(contador, document.body.firstChild);
-
 // ---------- ROLAGEM SUAVE ----------
 
 // Seleciona todos os links do menu
