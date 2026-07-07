@@ -1,73 +1,176 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cultivo Indoor - Sustentabilidade no Agrinho</title>
+    <title>Cultivo Indoor - Agrinho</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <div class="header-container">
-            <img src="assets/logo.png" alt="Logo Cultivo Indoor" class="logo">
-            <nav>
-                <a href="#o-que-e">O que é</a>
-                <a href="#beneficios">Benefícios e Desafios</a>
-                <a href="#curiosidades">Curiosidades</a>
-                <button id="btn-tema" class="btn-interativo">Alternar Modo</button>
-            </nav>
-        </div>
-    </header>
+<header>
+    <img src="img/logo.png" alt="Logo Cultivo Indoor" class="logo">
 
-    <section class="banner">
-        <div class="banner-content">
-            <h1 id="boas-vindas">Descubra a revolução do Cultivo Indoor!</h1>
-            <p>A agricultura do futuro, dentro da sua casa.</p>
-            <div class="form-grupo">
-                <label for="nome-usuario">Quer personalizar sua leitura? Digite seu nome:</label>
-                <input type="text" id="nome-usuario" placeholder="Ex: Maria">
-                <button id="btn-saudar" class="btn-enviar">Iniciar</button>
-            </div>
-        </div>
-    </section>
+    <h1>Cultivo Indoor</h1>
+    <p>Tecnologia e sustentabilidade no cultivo de plantas</p>
 
-    <main class="container">
-        
-        <section id="o-que-e" class="card">
-            <h2>O que é Cultivo Indoor?</h2>
-            <p>O cultivo indoor é a prática de produzir plantas, como hortaliças e ervas, em ambientes fechados e controlados. Utilizando luzes artificiais (como LEDs específicos) e sistemas de irrigação ou hidroponia, é possível simular as condições ideais da natureza dentro de salas, apartamentos ou estufas tecnológicas.</p>
-        </section>
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#maleficios">Malefícios</a>
+        <a href="#curiosidades">Curiosidades</a>
+    </nav>
 
-        <section id="beneficios" class="card">
-            <h2>Prós e Contras</h2>
-            <p>Clique nos botões abaixo para explorar o impacto dessa técnica no nosso dia a dia.</p>
-            
-            <div class="botoes-abas">
-                <button id="aba-beneficios" class="btn-aba ativo">Benefícios</button>
-                <button id="aba-maleficios" class="btn-aba">Desafios / Malefícios</button>
-            </div>
+</header>
 
-            <div id="conteudo-aba" class="conteudo-dinamico">
-                Carregando informações...
-            </div>
-        </section>
 
-        <section id="curiosidades" class="card">
-            <h2>Curiosidades do Cultivo Espacial</h2>
-            <p>Você sabia que a NASA utiliza o cultivo indoor para estudar como alimentar astronautas em Marte? A tecnologia que usamos hoje nas cidades nasceu da exploração espacial!</p>
-            <div class="contador-container">
-                <p>Quantas vezes você achou essa informação útil?</p>
-                <button id="btn-contador" class="btn-interativo">👍 Útil (<span id="num-contador">0</span>)</button>
-            </div>
-        </section>
+<section class="controles">
 
-    </main>
+    <button id="modoEscuro">
+        🌙 Modo Escuro
+    </button>
 
-    <footer>
-        <p>&copy; 2026 - Projeto Agrinho: Cultivo Indoor e Sustentabilidade Urbana.</p>
-    </footer>
+    <button id="aumentarFonte">
+        A+
+    </button>
 
-    <script src="script.js"></script>
+    <button id="diminuirFonte">
+        A-
+    </button>
+
+</section>
+
+
+
+<main>
+
+<section id="sobre" class="card">
+
+<h2>O que é cultivo indoor?</h2>
+
+<p>
+O cultivo indoor é uma técnica de produção de plantas realizada em ambientes
+fechados, onde fatores como iluminação, temperatura, umidade e nutrientes são
+controlados pelo cultivador.
+</p>
+
+<p>
+Essa tecnologia permite produzir alimentos e plantas mesmo em locais com pouco
+espaço ou condições climáticas desfavoráveis.
+</p>
+
+</section>
+
+
+
+<section id="beneficios" class="card">
+
+<h2>Benefícios</h2>
+
+<ul>
+
+<li>Maior controle sobre o desenvolvimento das plantas.</li>
+
+<li>Economia de água através de sistemas eficientes.</li>
+
+<li>Possibilidade de cultivo em áreas urbanas.</li>
+
+<li>Menor exposição a pragas externas.</li>
+
+</ul>
+
+</section>
+
+
+
+<section id="maleficios" class="card">
+
+<h2>Possíveis desafios</h2>
+
+<ul>
+
+<li>O custo inicial pode ser elevado.</li>
+
+<li>Necessita de conhecimento técnico.</li>
+
+<li>O consumo de energia pode aumentar dependendo do sistema utilizado.</li>
+
+</ul>
+
+</section>
+
+
+
+<section id="curiosidades" class="card">
+
+<h2>Curiosidades</h2>
+
+<p id="curiosidadeTexto">
+
+Clique no botão para descobrir uma curiosidade!
+
+</p>
+
+
+<button id="mostrarCuriosidade">
+Mostrar curiosidade
+
+</button>
+
+
+</section>
+
+
+
+<section class="card">
+
+<h2>Mensagem personalizada</h2>
+
+<form id="formulario">
+
+<label for="nome">
+Digite seu nome:
+</label>
+
+<input 
+type="text" 
+id="nome"
+placeholder="Seu nome"
+required>
+
+
+<button type="submit">
+Enviar
+</button>
+
+
+</form>
+
+
+<p id="mensagem"></p>
+
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+<p>
+Projeto desenvolvido para o tema Agrinho - Cultivo Indoor
+</p>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
 </body>
+
 </html>

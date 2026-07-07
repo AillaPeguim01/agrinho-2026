@@ -1,60 +1,86 @@
-// DOCUMENTO JAVASCRIPT - PROJETO AGRINHO
+// Guarda elementos importantes da página
+const botaoEscuro = document.getElementById("modoEscuro");
+const aumentarFonte = document.getElementById("aumentarFonte");
+const diminuirFonte = document.getElementById("diminuirFonte");
 
-// 1. Variáveis de estado e armazenamento de informações
-let cliquesUtil = 0;
-const textosAbas = {
-    beneficios: "<strong>Benefícios:</strong> Permite cultivar alimentos frescos o ano todo, economiza até 95% de água em sistemas hidropônicos, elimina a necessidade de agrotóxicos pesados e reduz a pegada de carbono do transporte.",
-    maleficios: "<strong>Desafios:</strong> O custo inicial com lâmpadas LED e estufas pode ser alto, além do consumo constante de energia elétrica para simular o sol, exigindo planejamento financeiro."
-};
+const botaoCuriosidade = document.getElementById("mostrarCuriosidade");
+const textoCuriosidade = document.getElementById("curiosidadeTexto");
 
-// 2. Seletores do DOM
-const btnTema = document.getElementById('btn-tema');
-const btnSaudar = document.getElementById('btn-saudar');
-const inputNome = document.getElementById('nome-usuario');
-const txtBoasVindas = document.getElementById('boas-vindas');
-const abaBeneficios = document.getElementById('aba-beneficios');
-const abaMaleficios = document.getElementById('aba-maleficios');
-const conteudoAba = document.getElementById('conteudo-aba');
-const btnContador = document.getElementById('btn-contador');
-const numContador = document.getElementById('num-contador');
+const formulario = document.getElementById("formulario");
+const mensagem = document.getElementById("mensagem");
 
-// 3. Função para Alternar Modo Claro / Escuro (Melhoria de Usabilidade)
-btnTema.addEventListener('click', () => {
-    document.body.classList.toggle('modo-escuro');
+
+// Alterna o modo escuro usando manipulação do DOM
+botaoEscuro.addEventListener("click", function(){
+
+    document.body.classList.toggle("dark");
+
 });
 
-// 4. Função para Personalizar as Boas-Vindas usando variáveis
-btnSaudar.addEventListener('click', () => {
-    const nome = inputNome.value.trim();
-    if (nome !== "") {
-        txtBoasVindas.innerText = `Olá, ${nome}! Seja bem-vindo à evolução da agricultura!`;
-        inputNome.value = ""; // Limpa o campo
-    } else {
-        alert("Por favor, digite um nome válido!");
-    }
+
+
+// Alteração do tamanho da fonte
+let tamanhoFonte = 16;
+
+
+aumentarFonte.addEventListener("click", function(){
+
+    tamanhoFonte += 2;
+
+    document.body.style.fontSize = tamanhoFonte + "px";
+
 });
 
-// 5. Função para Controlar as Abas de Conteúdo Dinâmico
-function alternarAba(abaSelecionada) {
-    if (abaSelecionada === 'beneficios') {
-        abaBeneficios.classList.add('ativo');
-        abaMaleficios.classList.remove('ativo');
-        conteudoAba.innerHTML = textosAbas.beneficios;
-    } else {
-        abaMaleficios.classList.add('ativo');
-        abaBeneficios.classList.remove('ativo');
-        conteudoAba.innerHTML = textosAbas.maleficios;
-    }
-}
 
-abaBeneficios.addEventListener('click', () => alternarAba('beneficios'));
-abaMaleficios.addEventListener('click', () => alternarAba('maleficios'));
 
-// 6. Função do Contador de Utilidade (Interação funcional)
-btnContador.addEventListener('click', () => {
-    cliquesUtil++;
-    numContador.innerText = cliquesUtil;
+diminuirFonte.addEventListener("click", function(){
+
+    tamanhoFonte -= 2;
+
+    document.body.style.fontSize = tamanhoFonte + "px";
+
 });
 
-// Inicializa o conteúdo da primeira aba ao carregar a página
-alternarAba('beneficios');
+
+
+
+// Lista de curiosidades
+const curiosidades = [
+
+    "Alguns cultivos indoor utilizam luzes de LED para economizar energia.",
+
+    "Sistemas indoor permitem plantar durante todo o ano.",
+
+    "A tecnologia ajuda agricultores em regiões com pouco espaço."
+
+];
+
+
+botaoCuriosidade.addEventListener("click", function(){
+
+    let numero = Math.floor(
+        Math.random() * curiosidades.length
+    );
+
+
+    textoCuriosidade.textContent = curiosidades[numero];
+
+});
+
+
+
+
+// Formulário com mensagem personalizada
+formulario.addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+
+    let nomeUsuario = document.getElementById("nome").value;
+
+
+    mensagem.textContent =
+    "Olá, " + nomeUsuario +
+    "! Obrigado por conhecer o cultivo indoor.";
+
+});
