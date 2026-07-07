@@ -1,94 +1,63 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
 body {
 
-    font-family: Arial, sans-serif;
-    background-color: #e8f5e9;
-    color: #222;
-    transition: 0.4s;
+    font-family: Arial;
+    background:#e8f5e9;
+    margin:0;
+    color:#222;
 
 }
-
 
 
 header {
 
-    background: linear-gradient(
-        135deg,
-        #2e7d32,
-        #66bb6a
-    );
-
+    background:#2e7d32;
     color:white;
     text-align:center;
-    padding:30px;
+    padding:20px;
 
 }
 
 
+header img {
 
-.logo {
-
-    width:120px;
+    width:100px;
     border-radius:50%;
-    margin-bottom:15px;
 
 }
-
-
-
-nav {
-
-    margin-top:20px;
-
-}
-
 
 
 nav a {
 
     color:white;
-    text-decoration:none;
     margin:10px;
-    font-weight:bold;
-    transition:0.3s;
+    text-decoration:none;
 
 }
 
 
 nav a:hover {
 
-    color:#c8e6c9;
+    color:#a5d6a7;
 
 }
 
 
+.botoes {
 
-.controles {
-
-    display:flex;
-    justify-content:center;
-    gap:10px;
-    padding:20px;
+    text-align:center;
+    margin:20px;
 
 }
-
 
 
 button {
 
     background:#388e3c;
     color:white;
-    border:none;
-    padding:10px 18px;
-    border-radius:8px;
+    border:0;
+    padding:10px;
+    margin:5px;
     cursor:pointer;
-    transition:0.3s;
 
 }
 
@@ -96,113 +65,65 @@ button {
 button:hover {
 
     background:#1b5e20;
-    transform:scale(1.05);
 
 }
-
 
 
 main {
 
     width:90%;
-    max-width:1000px;
     margin:auto;
 
 }
 
 
-
-.card {
+section {
 
     background:white;
-    padding:25px;
+    padding:20px;
     margin:20px 0;
-    border-radius:15px;
-
-    box-shadow:
-    0 5px 15px rgba(0,0,0,0.1);
-
-    transition:0.3s;
+    border-radius:10px;
 
 }
-
-
-
-.card:hover {
-
-    transform:translateY(-5px);
-
-}
-
 
 
 h2 {
 
     color:#2e7d32;
-    margin-bottom:15px;
 
 }
-
-
-
-li {
-
-    margin:10px;
-
-}
-
-
-
-input {
-
-    padding:10px;
-    border-radius:5px;
-    border:1px solid #777;
-    margin:10px;
-
-}
-
 
 
 footer {
 
-    text-align:center;
     background:#2e7d32;
     color:white;
-    padding:20px;
+    text-align:center;
+    padding:15px;
 
 }
 
 
+/* modo escuro */
 
-/* Modo escuro */
+.escuro {
 
-.dark {
-
-    background:#121212;
+    background:#222;
     color:white;
 
 }
 
 
-.dark .card {
+.escuro section {
 
-    background:#1e1e1e;
-
-}
-
-
-.dark h2 {
-
-    color:#81c784;
+    background:#333;
 
 }
 
 
+/* celular */
 
-/* Responsividade */
-
-@media(max-width:700px){
+@media(max-width:600px){
 
     nav {
 
@@ -211,19 +132,5 @@ footer {
 
     }
 
-
-    .controles {
-
-        flex-direction:column;
-        align-items:center;
-
-    }
-
-
-    .card {
-
-        padding:15px;
-
-    }
 
 }

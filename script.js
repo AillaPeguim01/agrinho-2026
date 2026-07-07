@@ -1,86 +1,81 @@
-// Guarda elementos importantes da página
-const botaoEscuro = document.getElementById("modoEscuro");
-const aumentarFonte = document.getElementById("aumentarFonte");
-const diminuirFonte = document.getElementById("diminuirFonte");
-
-const botaoCuriosidade = document.getElementById("mostrarCuriosidade");
-const textoCuriosidade = document.getElementById("curiosidadeTexto");
-
-const formulario = document.getElementById("formulario");
-const mensagem = document.getElementById("mensagem");
+// Botão de modo escuro
+let tema = document.getElementById("tema");
 
 
-// Alterna o modo escuro usando manipulação do DOM
-botaoEscuro.addEventListener("click", function(){
+tema.onclick = function(){
 
-    document.body.classList.toggle("dark");
+    document.body.classList.toggle("escuro");
 
-});
+};
 
 
 
-// Alteração do tamanho da fonte
-let tamanhoFonte = 16;
+// Alterar tamanho da fonte
+
+let tamanho = 16;
 
 
-aumentarFonte.addEventListener("click", function(){
+document.getElementById("maior").onclick = function(){
 
-    tamanhoFonte += 2;
+    tamanho = tamanho + 2;
 
-    document.body.style.fontSize = tamanhoFonte + "px";
+    document.body.style.fontSize = tamanho + "px";
 
-});
+};
 
 
+document.getElementById("menor").onclick = function(){
 
-diminuirFonte.addEventListener("click", function(){
+    tamanho = tamanho - 2;
 
-    tamanhoFonte -= 2;
+    document.body.style.fontSize = tamanho + "px";
 
-    document.body.style.fontSize = tamanhoFonte + "px";
-
-});
-
+};
 
 
 
-// Lista de curiosidades
-const curiosidades = [
+// Mostrar curiosidade
 
-    "Alguns cultivos indoor utilizam luzes de LED para economizar energia.",
+let curiosidade = document.getElementById("curiosidade");
 
-    "Sistemas indoor permitem plantar durante todo o ano.",
+let texto = document.getElementById("texto");
 
-    "A tecnologia ajuda agricultores em regiões com pouco espaço."
+
+let lista = [
+
+"Algumas plantas podem crescer usando apenas luz artificial.",
+
+"O cultivo indoor permite plantar em apartamentos.",
+
+"A tecnologia ajuda a economizar água."
 
 ];
 
 
-botaoCuriosidade.addEventListener("click", function(){
+curiosidade.onclick = function(){
 
-    let numero = Math.floor(
-        Math.random() * curiosidades.length
-    );
+    let numero = Math.floor(Math.random()*lista.length);
 
+    texto.innerHTML = lista[numero];
 
-    textoCuriosidade.textContent = curiosidades[numero];
-
-});
+};
 
 
 
+// Formulário
 
-// Formulário com mensagem personalizada
-formulario.addEventListener("submit", function(event){
+let formulario = document.getElementById("form");
+
+
+formulario.onsubmit = function(event){
 
     event.preventDefault();
 
 
-    let nomeUsuario = document.getElementById("nome").value;
+    let nome = document.getElementById("nome").value;
 
 
-    mensagem.textContent =
-    "Olá, " + nomeUsuario +
-    "! Obrigado por conhecer o cultivo indoor.";
+    document.getElementById("resultado").innerHTML =
+    "Olá, " + nome + "! Obrigado por visitar o site.";
 
-});
+};

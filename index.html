@@ -4,41 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cultivo Indoor - Agrinho</title>
+    <title>Cultivo Indoor</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-    <img src="img/logo.png" alt="Logo Cultivo Indoor" class="logo">
+    <img src="img/logo.png" alt="Logo do cultivo indoor">
 
     <h1>Cultivo Indoor</h1>
-    <p>Tecnologia e sustentabilidade no cultivo de plantas</p>
+    <p>Uma nova forma de cultivar usando tecnologia</p>
 
     <nav>
         <a href="#sobre">Sobre</a>
         <a href="#beneficios">Benefícios</a>
-        <a href="#maleficios">Malefícios</a>
         <a href="#curiosidades">Curiosidades</a>
     </nav>
 
 </header>
 
 
-<section class="controles">
+<section class="botoes">
 
-    <button id="modoEscuro">
-        🌙 Modo Escuro
-    </button>
-
-    <button id="aumentarFonte">
-        A+
-    </button>
-
-    <button id="diminuirFonte">
-        A-
-    </button>
+    <button id="tema">Modo Escuro</button>
+    <button id="maior">A+</button>
+    <button id="menor">A-</button>
 
 </section>
 
@@ -46,110 +37,82 @@
 
 <main>
 
-<section id="sobre" class="card">
+<section id="sobre">
 
 <h2>O que é cultivo indoor?</h2>
 
 <p>
-O cultivo indoor é uma técnica de produção de plantas realizada em ambientes
-fechados, onde fatores como iluminação, temperatura, umidade e nutrientes são
-controlados pelo cultivador.
-</p>
-
-<p>
-Essa tecnologia permite produzir alimentos e plantas mesmo em locais com pouco
-espaço ou condições climáticas desfavoráveis.
+O cultivo indoor é o cultivo de plantas em ambientes fechados,
+onde é possível controlar luz, água, temperatura e nutrientes.
 </p>
 
 </section>
 
 
 
-<section id="beneficios" class="card">
+<section id="beneficios">
 
 <h2>Benefícios</h2>
 
 <ul>
-
-<li>Maior controle sobre o desenvolvimento das plantas.</li>
-
-<li>Economia de água através de sistemas eficientes.</li>
-
-<li>Possibilidade de cultivo em áreas urbanas.</li>
-
-<li>Menor exposição a pragas externas.</li>
-
+<li>Produção em pequenos espaços.</li>
+<li>Controle maior das plantas.</li>
+<li>Menor desperdício de água.</li>
+<li>Produção durante todo o ano.</li>
 </ul>
 
 </section>
 
 
 
-<section id="maleficios" class="card">
+<section>
 
-<h2>Possíveis desafios</h2>
+<h2>Malefícios</h2>
 
 <ul>
-
-<li>O custo inicial pode ser elevado.</li>
-
-<li>Necessita de conhecimento técnico.</li>
-
-<li>O consumo de energia pode aumentar dependendo do sistema utilizado.</li>
-
+<li>Pode ter custo inicial alto.</li>
+<li>Precisa de equipamentos.</li>
+<li>Pode gastar energia elétrica.</li>
 </ul>
 
 </section>
 
 
 
-<section id="curiosidades" class="card">
+<section id="curiosidades">
 
 <h2>Curiosidades</h2>
 
-<p id="curiosidadeTexto">
-
-Clique no botão para descobrir uma curiosidade!
-
+<p id="texto">
+Clique no botão para ver uma curiosidade.
 </p>
 
-
-<button id="mostrarCuriosidade">
-Mostrar curiosidade
-
+<button id="curiosidade">
+Ver curiosidade
 </button>
-
 
 </section>
 
 
 
-<section class="card">
+<section>
 
-<h2>Mensagem personalizada</h2>
+<h2>Digite seu nome</h2>
 
-<form id="formulario">
+<form id="form">
 
-<label for="nome">
-Digite seu nome:
-</label>
+<label for="nome">Nome:</label>
 
-<input 
-type="text" 
-id="nome"
-placeholder="Seu nome"
-required>
+<input id="nome" type="text">
 
-
-<button type="submit">
+<button>
 Enviar
 </button>
-
 
 </form>
 
 
-<p id="mensagem"></p>
+<p id="resultado"></p>
 
 
 </section>
@@ -158,15 +121,11 @@ Enviar
 </main>
 
 
-
 <footer>
 
-<p>
-Projeto desenvolvido para o tema Agrinho - Cultivo Indoor
-</p>
+Projeto Agrinho - Cultivo Indoor
 
 </footer>
-
 
 
 <script src="script.js"></script>
