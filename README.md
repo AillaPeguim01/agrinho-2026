@@ -6,21 +6,15 @@
 
 ### Objetivo
 
-O objetivo deste projeto é apresentar o cultivo indoor como uma alternativa moderna e sustentável para a produção de plantas em ambientes controlados. O site busca informar os visitantes sobre o funcionamento dessa técnica, seus benefícios para o meio ambiente e sua relação com a inovação e a sustentabilidade, temas presentes no Programa Agrinho.
+O objetivo deste projeto é apresentar o cultivo indoor como uma alternativa moderna e sustentável para a produção de plantas em ambientes controlados, temas presentes no Agrinho 2026. O site busca informar os visitantes sobre como funciona essa técnica, seus benefícios, maleficios e curiosidades.
 
 ### Justificativa
 
-O cultivo indoor é uma tecnologia que permite produzir plantas com maior controle das condições de cultivo, como iluminação, temperatura, umidade e irrigação. Essa técnica pode reduzir o desperdício de água, otimizar o uso dos recursos naturais e contribuir para uma agricultura mais eficiente. Além disso, por ser realizado em um ambiente controlado, o cultivo não sofre diretamente com condições climáticas extremas, como excesso de sol, chuvas intensas, geadas ou períodos de seca, diminuindo as perdas na produção. Por isso, o tema foi escolhido para demonstrar como a tecnologia pode auxiliar na produção sustentável de alimentos.
+O cultivo indoor é uma tecnologia que permite produzir plantas com maior controle das condições de cultivo, como iluminação, temperatura, umidade e irrigação. Essa técnica pode reduzir o desperdício de água, otimizar o uso dos recursos naturais e contribuir para uma agricultura mais eficiente. Além disso, por ser realizado em um ambiente controlado, o cultivo não sofre diretamente com condições climáticas, diminuindo as perdas na produção. Por isso, o tema foi escolhido para demonstrar como a tecnologia pode auxiliar na produção sustentável de alimentos.
 
 ### Sobre o Projeto
 
 Este projeto consiste em um site desenvolvido para apresentar informações sobre o cultivo indoor de forma clara e organizada. Durante o desenvolvimento, foram aplicados conhecimentos de programação e design para criar uma página informativa, com imagens, botões e recursos visuais que tornam a navegação mais intuitiva.
-
-### Tecnologias Utilizadas
-
-* HTML5
-* CSS3
-* JavaScript
 
 ### Recursos Utilizados
 
@@ -30,11 +24,11 @@ Este projeto consiste em um site desenvolvido para apresentar informações sobr
 
 ### Referências
 
-* Revista E&S. *Indoor Farming: o conceito por trás da moda*. Disponível em: https://revistaes.com.br/colunas/indoor-farming-o-conceito-por-tras-da-moda.
-* Revista Campo & Negócios. *Fazendas do futuro: potencial do cultivo indoor além dos microverdes*. Disponível em: https://campoenegocios.com/fazendas-do-futuro-potencial-do-cultivo-indoor-alem-dos-microverdes/.
+* Revista E&S. Indoor Farming: o conceito por trás da moda*.
+* Revista Campo & Negócios. Fazendas do futuro: potencial do cultivo indoor além dos microverdes. 
 * Google Imagens, utilizado para pesquisa de imagens ilustrativas.
-* ChatGPT (OpenAI), utilizado como ferramenta de apoio para esclarecimento de dúvidas de programação, auxílio na implementação de funcionalidades e criação da logomarca do projeto por meio de Inteligência Artificial.
-
+* ChatGPT (OpenAI)
+* Gemini
 
 ### Conclusão
 
