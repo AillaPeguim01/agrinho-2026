@@ -24,7 +24,7 @@ Este projeto consiste em um site desenvolvido para apresentar informações sobr
 
 ### Referências
 
-* Revista E&S. Indoor Farming: o conceito por trás da moda*.
+* Revista E&S. Indoor Farming: o conceito por trás da moda.
 * Revista Campo & Negócios. Fazendas do futuro: potencial do cultivo indoor além dos microverdes. 
 * Google Imagens, utilizado para pesquisa de imagens ilustrativas.
 * ChatGPT (OpenAI)
