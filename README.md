@@ -30,11 +30,11 @@ Este projeto consiste em um site desenvolvido para apresentar informações sobr
 
 ### Referências
 
-* EMBRAPA. Materiais sobre agricultura, inovação e sustentabilidade.
-* Organização das Nações Unidas para Alimentação e Agricultura (FAO). Conteúdos sobre agricultura sustentável.
-* Ministério da Agricultura e Pecuária (MAPA). Informações sobre produção agrícola.
+* Revista E&S. *Indoor Farming: o conceito por trás da moda*. Disponível em: https://revistaes.com.br/colunas/indoor-farming-o-conceito-por-tras-da-moda.
+* Revista Campo & Negócios. *Fazendas do futuro: potencial do cultivo indoor além dos microverdes*. Disponível em: https://campoenegocios.com/fazendas-do-futuro-potencial-do-cultivo-indoor-alem-dos-microverdes/.
 * Google Imagens, utilizado para pesquisa de imagens ilustrativas.
-* ChatGPT (OpenAI), utilizado como ferramenta de apoio para esclarecimento de dúvidas de programação e para a criação da logomarca do projeto por meio de Inteligência Artificial.
+* ChatGPT (OpenAI), utilizado como ferramenta de apoio para esclarecimento de dúvidas de programação, auxílio na implementação de funcionalidades e criação da logomarca do projeto por meio de Inteligência Artificial.
+
 
 ### Conclusão
 
