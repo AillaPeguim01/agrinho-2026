@@ -15,7 +15,6 @@ document.getElementById("menor").onclick = function () {
 
 // curiosidades de cultivo indoor
 const lista = [
-    "👩🏻‍💻 Tecnologia da NASA: a iluminação e irrigação indoor foram aprimoradas para alimentar astronautas.",
     "💧 Sistemas indoor podem economizar até 95% de água.",
     "☀️ LEDs azuis favorecem folhas e LEDs vermelhos estimulam flores.",
     "⚡ Em ambiente controlado, algumas plantas crescem até duas vezes mais rápido.",
