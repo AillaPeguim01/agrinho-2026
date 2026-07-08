@@ -2,8 +2,6 @@
 
 # Cultivo Indoor
 
-# Cultivo Indoor
-
 ## Projeto Agrinho
 
 ### Objetivo
