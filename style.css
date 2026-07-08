@@ -76,6 +76,13 @@ footer {
     padding: 15px;
 }
 
+hr {
+    border: none;
+    height: 3px;
+    background-color: #2e7d32; /* verde */
+    margin: 20px 0;
+}
+
 /* Responsivo */
 
 @media (max-width: 600px) {
