@@ -1,3 +1,4 @@
+/*configuração geral*/
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -5,39 +6,39 @@ body {
     color: #222;
     text-align: center;
 }
-
+/*cabeçalho*/
 header {
     background: #2e7d32;
     color: white;
     text-align: center;
     padding: 20px;
 }
-
+/*logo*/
 header img {
     width: 100px;
     border-radius: 50%;
 }
-
+/*menu*/
 nav {
     margin-top: 15px;
 }
-
+/* link menu*/
 nav a {
     color: white;
     text-decoration: none;
     margin: 0 10px;
-    transition: color 0.3s ease; /* Transição suave adicionada */
+    transition: color 0.3s ease; /* transição suave */
 }
-
+/*passar mouse*/
 nav a:hover {
     color: #a5d6a7;
 }
-
+/* a+ a- */
 .botoes {
     text-align: center;
     margin: 20px;
 }
-
+/* estilo botões */
 button {
     background: #388e3c;
     color: white;
@@ -46,9 +47,9 @@ button {
     margin: 5px;
     cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s ease; /* Transição suave adicionada */
+    transition: background-color 0.3s ease; /* mudança cor */
 }
-
+/*botão mouse*/
 button:hover {
     background: #1b5e20;
 }
@@ -65,18 +66,14 @@ section {
 h2 {
     color: #2e7d32;
 }
-
-.cards {
-    display: block;
-}
-
+/* rodape*/
 footer {
     background: #2e7d32;
     color: white;
     text-align: center;
     padding: 15px;
 }
-
+/* linha*/
 hr {
     border: none;
     height: 3px;
@@ -84,7 +81,7 @@ hr {
     margin: 20px 0;
 }
 
-/* Responsivo */
+/* celular */
 
 @media (max-width: 600px) {
 
@@ -95,7 +92,7 @@ hr {
     }
 
 }
-
+/* conf imagem*/
 #imagens img {
     width: 500px;
     max-width: 100%;
